@@ -3,9 +3,11 @@ from babble import LanguageLearner
 import sys
 
 presets = {
-	"voyinch": "res/voyinch/eva-raw.eva",
-	"voyinch-short": "res/voyinch/eva-raw-shortened.eva",
-	"voyinch-debug": "res/voyinch/eva-raw-debug.eva"
+	"voynich": "res/voynich/eva-raw.eva",
+	"voynich-short": "res/voynich/eva-raw-shortened.eva",
+	"voynich-debug": "res/voynich/eva-raw-debug.eva",
+	"mobydick": "res/english/mobydick.txt",
+	"mobydick-debug": "res/english/mobydick-debug.txt"
 }
 
 def error(msg):

@@ -102,7 +102,7 @@ class LanguageLearner:
 			prompt = chr(random.choice(self.mapping))
 		output = ""
 		for c in prompt[:-1]:
-			self.net.activate([charCode])
+			self.net.activate([self.mapping.index(ord(c))])
 		charCode = self.mapping.index(ord(prompt[-1:]))
 		for i in range(0, length):
 			sampledResult = self.net.activate([charCode])
